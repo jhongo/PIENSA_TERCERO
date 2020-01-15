@@ -1,10 +1,13 @@
 package vista;
 
+import javax.swing.JFrame;
+
 public class home extends javax.swing.JFrame {
     
       public static registroEstudiante ral;
     public home() {
         initComponents();
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -26,6 +29,7 @@ public class home extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         btnIniciarJuego = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         jLabel6.setText("jLabel6");
 
@@ -35,7 +39,7 @@ public class home extends javax.swing.JFrame {
 
         btnRegistrarEstudiantes.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnRegistrarEstudiantes.setForeground(new java.awt.Color(0, 0, 0));
-        btnRegistrarEstudiantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_file-text_298777.png"))); // NOI18N
+        btnRegistrarEstudiantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_user-id_285641.png"))); // NOI18N
         btnRegistrarEstudiantes.setText("Registrar Estudiante");
         btnRegistrarEstudiantes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -45,32 +49,32 @@ public class home extends javax.swing.JFrame {
 
         btnBuscar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnBuscar.setForeground(new java.awt.Color(0, 0, 0));
-        btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_67_111124.png"))); // NOI18N
+        btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_search_2608311.png"))); // NOI18N
         btnBuscar.setText("Buscar");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
         jLabel1.setText("Datos del Estudiante");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Nombres:");
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setForeground(new java.awt.Color(204, 204, 204));
         jLabel3.setText("Curso:");
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
         jLabel4.setText("Apellidos:");
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
         jLabel5.setText("Diagnóstico de la Evaluación");
 
-        btnIniciarJuego.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnIniciarJuego.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnIniciarJuego.setForeground(new java.awt.Color(0, 0, 0));
-        btnIniciarJuego.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_multimedia-20_809507.png"))); // NOI18N
+        btnIniciarJuego.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_joystick_3635.png"))); // NOI18N
         btnIniciarJuego.setText("Comenzar Juego  ");
         btnIniciarJuego.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,46 +84,52 @@ public class home extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_text_103723.png"))); // NOI18N
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_130-man-student-2_3099383.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnIniciarJuego)
-                .addGap(19, 19, 19))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel2)
-                                    .addGap(28, 28, 28)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel8)
+                                .addGap(55, 55, 55)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                            .addComponent(jLabel3)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                            .addComponent(jLabel4)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                            .addComponent(jLabel2)
+                                            .addGap(28, 28, 28)
+                                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel8)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtBuscarHome, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnBuscar)
+                                        .addGap(66, 66, 66)
+                                        .addComponent(btnRegistrarEstudiantes))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(83, 83, 83)
+                                .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarHome, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnBuscar)
-                                .addGap(34, 34, 34)
-                                .addComponent(btnRegistrarEstudiantes))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(jLabel1)
-                        .addGap(154, 154, 154)
-                        .addComponent(jLabel5)))
-                .addContainerGap(51, Short.MAX_VALUE))
+                                .addComponent(jLabel9)
+                                .addGap(107, 107, 107)
+                                .addComponent(jLabel5)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnIniciarJuego)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,17 +139,18 @@ public class home extends javax.swing.JFrame {
                         .addGap(34, 34, 34)
                         .addComponent(jLabel8))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtBuscarHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btnBuscar))
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtBuscarHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnBuscar)
                             .addComponent(btnRegistrarEstudiantes, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(jLabel5))
+                    .addComponent(jLabel9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -151,9 +162,9 @@ public class home extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
+                .addGap(18, 18, 18)
                 .addComponent(btnIniciarJuego)
-                .addGap(14, 14, 14))
+                .addGap(11, 11, 11))
         );
 
         pack();
@@ -219,6 +230,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

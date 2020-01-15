@@ -33,6 +33,7 @@ public class SQLusuarios extends conexion {
 
         } catch (SQLException ex) {
             Logger.getLogger(SQLusuarios.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, ex);
         }
         return false;
     }

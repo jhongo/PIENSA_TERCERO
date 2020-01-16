@@ -39,10 +39,21 @@ public class login extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setBackground(null);
+        jLabel1.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Usuario:");
 
+        jLabel2.setBackground(null);
+        jLabel2.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Contraseña:");
 
+        txtUsuarioLogin.setBackground(new java.awt.Color(255, 255, 255));
+
+        btnIniciar.setBackground(null);
+        btnIniciar.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnIniciar.setForeground(new java.awt.Color(255, 255, 255));
         btnIniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_sign-check_299110.png"))); // NOI18N
         btnIniciar.setText("    Iniciar");
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
@@ -50,6 +61,8 @@ public class login extends javax.swing.JFrame {
                 btnIniciarActionPerformed(evt);
             }
         });
+
+        txtcontraseña.setBackground(new java.awt.Color(255, 255, 255));
 
         iconkey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_key__security__password__open_2538749.png"))); // NOI18N
 
@@ -70,9 +83,9 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setBackground(new java.awt.Color(51, 51, 255));
-        jLabel6.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setBackground(null);
+        jLabel6.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_document_text_accept_103510.png"))); // NOI18N
         jLabel6.setText("INICIAR SESIÓN");
 

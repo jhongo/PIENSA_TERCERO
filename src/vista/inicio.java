@@ -26,6 +26,7 @@ public class inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btnRegistrar.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_user-id_285641.png"))); // NOI18N
         btnRegistrar.setText("Registrar Docente");
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -34,6 +35,7 @@ public class inicio extends javax.swing.JFrame {
             }
         });
 
+        btnIS.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         btnIS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_Login_73221.png"))); // NOI18N
         btnIS.setText("Iniciar sesion");
         btnIS.addActionListener(new java.awt.event.ActionListener() {
@@ -51,7 +53,7 @@ public class inicio extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnRegistrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnIS, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

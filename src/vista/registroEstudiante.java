@@ -13,7 +13,7 @@ public class registroEstudiante extends javax.swing.JFrame {
 
         this.setLocationRelativeTo(null);
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -29,7 +29,7 @@ public class registroEstudiante extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         btnBuscar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tbRegistroEstudiantes = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         txtNombreRegistro = new javax.swing.JTextField();
@@ -42,9 +42,11 @@ public class registroEstudiante extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Registro del Estudiante");
 
         btnVolver.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnVolver.setForeground(new java.awt.Color(0, 0, 0));
         btnVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_restart-1_18208.png"))); // NOI18N
         btnVolver.setText("Volver");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
@@ -54,6 +56,7 @@ public class registroEstudiante extends javax.swing.JFrame {
         });
 
         btnGuardar.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnGuardar.setForeground(new java.awt.Color(0, 0, 0));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_floppy_285657.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -63,10 +66,12 @@ public class registroEstudiante extends javax.swing.JFrame {
         });
 
         btnActualizar.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnActualizar.setForeground(new java.awt.Color(0, 0, 0));
         btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_agt_reload_15581.png"))); // NOI18N
         btnActualizar.setText("EDITAR");
 
         btnEiminar.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnEiminar.setForeground(new java.awt.Color(0, 0, 0));
         btnEiminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_f-cross_256_282471.png"))); // NOI18N
         btnEiminar.setText("  Eliminar");
         btnEiminar.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +81,7 @@ public class registroEstudiante extends javax.swing.JFrame {
         });
 
         btnModificar.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnModificar.setForeground(new java.awt.Color(0, 0, 0));
         btnModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_button_ok_3207.png"))); // NOI18N
         btnModificar.setText("Seleccionar");
 
@@ -90,7 +96,7 @@ public class registroEstudiante extends javax.swing.JFrame {
                     .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEiminar, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -107,15 +113,20 @@ public class registroEstudiante extends javax.swing.JFrame {
         );
 
         jTextField1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_text_103723.png"))); // NOI18N
 
         btnBuscar.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        btnBuscar.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscar.setForeground(new java.awt.Color(0, 0, 0));
         btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_search_2608311.png"))); // NOI18N
         btnBuscar.setText("Buscar");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tbRegistroEstudiantes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -123,15 +134,17 @@ public class registroEstudiante extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Nombres", "Apellidos", "Edad", "Curso"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tbRegistroEstudiantes);
 
         jLabel4.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Edad:");
 
         jLabel5.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Curso:");
 
         txtNombreRegistro.setBackground(new java.awt.Color(255, 255, 255));
@@ -143,9 +156,11 @@ public class registroEstudiante extends javax.swing.JFrame {
         txtCursoRegistro.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nombres:");
 
         jLabel3.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Apellidos:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -253,12 +268,16 @@ public class registroEstudiante extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Error al guardar");
 
-        } //RE
+        }
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnEiminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEiminarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEiminarActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+      
+    }//GEN-LAST:event_jTextField1KeyPressed
 
     /**
      * @param args the command line arguments
@@ -310,8 +329,8 @@ public class registroEstudiante extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTable tbRegistroEstudiantes;
     private javax.swing.JTextField txtApellidosRegistro;
     private javax.swing.JTextField txtCursoRegistro;
     private javax.swing.JTextField txtEdadRegistro;

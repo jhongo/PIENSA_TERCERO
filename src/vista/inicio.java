@@ -27,6 +27,7 @@ public class inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnRegistrar.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnRegistrar.setForeground(new java.awt.Color(0, 0, 0));
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_user-id_285641.png"))); // NOI18N
         btnRegistrar.setText("Registrar Docente");
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -36,6 +37,7 @@ public class inicio extends javax.swing.JFrame {
         });
 
         btnIS.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        btnIS.setForeground(new java.awt.Color(0, 0, 0));
         btnIS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconfinder_Login_73221.png"))); // NOI18N
         btnIS.setText("Iniciar sesion");
         btnIS.addActionListener(new java.awt.event.ActionListener() {
